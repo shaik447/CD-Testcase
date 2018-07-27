@@ -1,2 +1,2 @@
 FROM tomcat
-ADD  /var/jenkins/notificationapp-1.war /usr/local/tomcat/webapps
+COPY  /var/jenkins/notificationapp-1.war /usr/local/tomcat/webapps
