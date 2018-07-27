@@ -25,20 +25,8 @@ public class AppTest {
 	public void SeleniumTest() throws InterruptedException
 	{
 	
-		driver.navigate().to("http://store.demoqa.com/");
-		System.out.println("Successfully opened the web page");
-		//wait for 20 seconds	
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//click on my account link to navigate to login page
-		driver.findElement(By.className("account_icon")).click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		//send text to the username field
-		driver.findElement(By.id("log")).sendKeys("shaik");
-		//send text to the password field
-		driver.findElement(By.id("pwd")).sendKeys("shaik123");
-		//click the login button
-		driver.findElement(By.id("login")).click();			
+		driver.navigate().to("http://localhost:8000/notificationapp-1/devices");
+		System.out.println("Successfully got devices");				
 		
 	}
 	
